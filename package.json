@@ -4,6 +4,8 @@
   "description": "Aprofundando-se em TDD com JS",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/leticiamazzoportela/js-tdd-course/issues"
   },
-  "homepage": "https://github.com/leticiamazzoportela/js-tdd-course#readme"
+  "homepage": "https://github.com/leticiamazzoportela/js-tdd-course#readme",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-plugin-react": "^7.14.3",
+    "husky": "^3.0.5"
+  }
 }
